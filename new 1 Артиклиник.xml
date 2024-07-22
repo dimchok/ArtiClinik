@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<yml_catalog date="2024-07-22 14:25">
+    <shop>
+        <name>Арти Клиник</name>
+        <company>ООО «Энергия Жизни»</company>
+        <url>https://articlinic.ru/</url>
+        <email>kimskiy@mail.ru</email>
+        <picture>https://static.tildacdn.com/tild6530-3730-4132-a561-363339313133/Group_4.svg</picture>
+        <description>Каталог врачей</description>
+        <currencies>
+          <currency id="RUR" rate="1" />
+        </currencies>
+        <categories>
+            <category id="1">Врач</category>
+        </categories>
+
+        <sets>
+            <set id="nevrolog">
+                <name>Невролог</name>
+                <url>https://articlinic.ru</url>
+            </set>
+			<set id="manualniyterapevt">
+                <name>Мануальный терапевт</name>
+                <url>https://articlinic.ru</url>
+            </set>
+			<set id="refleksoterapevt">
+                <name>Рефлексотерапевт</name>
+                <url>https://articlinic.ru</url>
+            </set>
+			
+        </sets>
+        <offers>
+            <!--
+                Оффер для врача - это связка "Врач"-"Клиника"-"Тип приема".
+                При наличии у врача нескольких офферов нужно предоставить каждый из них отдельно.
+                В таком случае URL разных офферов одного врача должны различаться незначащим cgi-параметром ?offer-id=...
+
+            -->
+            <!--group_id - уникальный идентификтаор врача. нужен при наличии разных URL у одного человека. Целое число, не более 9 знаков-->
+            <offer id="vrach111" group_id="94726"> 
+                <name>Тян Виктория Николаевна</name> <!--ФИО, именно в таком порядке-->
+                <!--URL может совпадать ТОЛЬКО для офферов с одинаковым group_id.-->
+                <url>https://articlinic.ru/tyanvn</url><!--URL карточки врача. -->
+                <price from="true">5000</price>  <!--Цена приема при записи в источнике фида, с учетом скидки -->
+                <oldprice>5000</oldprice>  <!--Цена приема в клинике, должна быть не ниже price-->
+                <currencyId>RUR</currencyId>
+                <sales_notes>Первичный прием</sales_notes>
+                <set-ids>nevrolog,manualniyterapevt,refleksoterapevt</set-ids> <!--специальности через запятую-->
+                <picture>https://optim.tildacdn.com/tild3866-3238-4431-b837-643837343863/-/resize/456x/-/format/webp/noroot.png</picture>
+                <description>Главный врач медицинского центра АРТИ КЛИНИК,
+доктор медицинских наук, профессор, член Профессиональной Ассоциации рефлексотерапевтов, член Московского научно-практического общества рефлексотерапевтов и мануальных терапевтов, член Московского профессионального объединения мануальных терапевтов.
+				</description>
+                <categoryId>1</categoryId>
+                <!--Пустых блоков param быть не должно. Если необязательное поле не заполнено, его нужно исключить из фида-->
+                <param name="Фамилия">Тян</param>
+                <param name="Имя">Виктория</param>
+                <param name="Отчество">Николаевна</param>
+                <param name="Годы опыта">25</param>
+                <param name="Начало карьеры">1998</param> <!--Дата начала карьеры, для подсчета стажа-->
+                <param name="Город">г. Москва</param>
+                <param name="Взрослый врач">true</param> <!--Принимает взрослых, от 18 лет-->
+                <param name="Детский врач">false</param> <!--Принимает детей, до 18 лет-->
+                <param name="Ссылка на профиль врача">https://articlinic.ru/tyanvn</param>
+                <param name="Город клиники">г. Москва</param>
+                <param name="Адрес клиники">ул. 1812 года, д.3</param>
+                <param name="Название клиники">Арти Клиник</param>
+                <param name="Возможность записи">true</param> <!--Возможность записаться на прием через сайт-поставщик фида-->
+                <param name="Телефон для записи">+7(499)148-17-24</param> <!--Можно подменник аггрегатора-->
+				<param name="Образование - 1" unit="Организация">Российская медицинская академия непрерывного профессионального образования</param>
+<param name="Образование - 1" unit="Дата">1996</param>
+<param name="Образование - 1" unit="Название">Профессиональное образование</param>
+<param name="Образование - 1" unit="Специальность">Неврология</param>
+<param name="Образование - 2" unit="Организация">Российская медицинская академия непрерывного профессионального образования</param>
+<param name="Образование - 2" unit="Дата">1997</param>
+<param name="Образование - 2" unit="Название">Профессиональное образование</param>
+<param name="Образование - 2" unit="Специальность">Мануальная терапия</param>
+<param name="Образование - 3" unit="Организация">Российская медицинская академия непрерывного профессионального образования</param>
+<param name="Образование - 3" unit="Дата">1998</param>
+<param name="Образование - 3" unit="Название">Профессиональное образование</param>
+<param name="Образование - 3" unit="Специальность">Рефлексотерапия</param>
+            </offer>
+			<offer id="vrach112" group_id="94722"> 
+                <name>Ким Алина Александровна</name> <!--ФИО, именно в таком порядке-->
+                <!--URL может совпадать ТОЛЬКО для офферов с одинаковым group_id.-->
+                <url>https://articlinic.ru/kimaa</url><!--URL карточки врача. -->
+                <price from="true">3000</price>  <!--Цена приема при записи в источнике фида, с учетом скидки -->
+                <oldprice>3000</oldprice>  <!--Цена приема в клинике, должна быть не ниже price-->
+                <currencyId>RUR</currencyId>
+                <sales_notes>Первичный прием</sales_notes>
+                <set-ids>nevrolog,manualniyterapevt</set-ids> <!--специальности через запятую-->
+                <picture>https://optim.tildacdn.com/tild6431-3935-4236-b937-376163626434/-/resize/426x/-/format/webp/___.jpeg</picture>
+                <description>Врач-невролог, мануальный терапевт медицинского центра АРТИ КЛИНИК	
+				</description>
+                <categoryId>1</categoryId>
+                <!--Пустых блоков param быть не должно. Если необязательное поле не заполнено, его нужно исключить из фида-->
+                <param name="Фамилия">Ким</param>
+                <param name="Имя">Алина</param>
+                <param name="Отчество">Александровна</param>
+                <param name="Годы опыта">5</param>
+                <param name="Начало карьеры">2020</param> <!--Дата начала карьеры, для подсчета стажа-->
+                <param name="Город">г. Москва</param>
+                <param name="Взрослый врач">true</param> <!--Принимает взрослых, от 18 лет-->
+                <param name="Детский врач">false</param> <!--Принимает детей, до 18 лет-->
+                <param name="Ссылка на профиль врача">https://articlinic.ru/kimaa</param>
+                <param name="Город клиники">г. Москва</param>
+                <param name="Адрес клиники">ул. 1812 года, д.3</param>
+                <param name="Название клиники">Арти Клиник</param>
+                <param name="Возможность записи">true</param> <!--Возможность записаться на прием через сайт-поставщик фида-->
+                <param name="Телефон для записи">+7(499)148-17-24</param> <!--Можно подменник аггрегатора-->
+								<param name="Образование - 1" unit="Организация">Первый МГМУ им. И.М. Сеченова</param>
+<param name="Образование - 1" unit="Дата">2018</param>
+<param name="Образование - 1" unit="Название">Профессиональное образование</param>
+<param name="Образование - 1" unit="Специальность">Лечебное Дело</param>
+<param name="Образование - 2" unit="Организация">Центральная Государственная академия при Президенте РФ</param>
+<param name="Образование - 2" unit="Дата">2020</param>
+<param name="Образование - 2" unit="Название">Профессиональное образование</param>
+<param name="Образование - 2" unit="Специальность">Лечебное дело </param>
+<param name="Образование - 3" unit="Организация">Российская медицинская академия непрерывного профессионального образования</param>
+<param name="Образование - 3" unit="Дата">2021</param>
+<param name="Образование - 3" unit="Название">Профессиональное образование</param>
+<param name="Образование - 3" unit="Специальность">Мануальная Терапия</param>
+            </offer>
+        </offers>
+    </shop>
+</yml_catalog>
